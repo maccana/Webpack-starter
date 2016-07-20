@@ -1,6 +1,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
+
 const PATHS = {
   app: path.join(__dirname, 'app'),
   build: path.join(__dirname, 'build')
@@ -17,9 +19,18 @@ module.exports = {
     path: PATHS.build,
     filename: '[name].js'
   },
+
+  module: {
+    loaders: [
+        {test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader'},
+        {test: /\.scss$/, loader: ExtractTextPlugin.extract("css-loader!sass")}
+    ]
+  },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Webpack demo'
-    })
+    }),
+    new ExtractTextPlugin("style.css", {allChunks: false} )
+
   ]
 };
