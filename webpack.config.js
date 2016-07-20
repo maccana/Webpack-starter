@@ -28,7 +28,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Webpack demo'
+      title: 'Webpack Starter'
     }),
     new ExtractTextPlugin("style.css", {allChunks: false} )
 
