@@ -4252,7 +4252,7 @@
 	});
 	// app/users.js
 
-	var users = exports.users = [{ name: 'Zack', age: 45 }, { name: 'Robby', age: 19 }, { name: 'Alice', age: 67 }, { name: 'Carl', age: 32 }, { name: 'Win', age: 27 }];
+	var users = exports.users = [{ name: 'Zack', age: 45 }, { name: 'Robby', age: 19 }, { name: 'Alice', age: 67 }, { name: 'Carl', age: 32 }, { name: 'Win', age: 21 }];
 
 /***/ },
 /* 125 */
