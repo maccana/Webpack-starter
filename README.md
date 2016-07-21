@@ -1,4 +1,6 @@
-# Webpack-starter
+# Webpack Starter
+
+This is a Webpack starter/template project compiled from various tutorials.It is intended as a guide to adding Webpack into a new applicaiton build or integrating into an existing applicaiton.
 
 npm install
 
