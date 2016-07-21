@@ -23,7 +23,7 @@ module.exports = {
   module: {
     loaders: [
         {test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader'},
-        {test: /\.scss$/, loader: ExtractTextPlugin.extract("css-loader!sass")}
+        {test: /\.scss$/, loader: ExtractTextPlugin.extract("css-loader!sass-loader")}
     ]
   },
   plugins: [
