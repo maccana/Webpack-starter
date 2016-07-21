@@ -4,7 +4,9 @@ This is a Webpack starter/template project compiled from various tutorials.It is
 
 npm install
 
-# To Run
+# Build and run
+
+npm install
 
 npm run build
 
